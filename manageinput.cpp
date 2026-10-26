@@ -1,29 +1,15 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int age, dob;
-    string firstName, homeAddress, job;
+    int age, n;
+    cin >> age >> n;
 
-    cout<<"Enter your name"<< "\t";
-    cin.ignore(); // To ignore the newline character left in the input buffer after reading age
-    getline(cin, firstName);
+    vector<pair<string, int>> heights(n);
+    for (int i = 0; i < n; i++) {
+        cin >> heights[i].first >> heights[i].second;
+    }
 
-    cout<<"Enter you age: "<< "\t";
-    cin>>age;
-
-    cout<<"Enter your date of birth: "<< "\t";
-    cin>>dob;
-
-    cout<<"Enter your home address: "<< "\t";
-    cin.ignore();
-    getline(cin, homeAddress);
-
-    cout<<"Ton metier est: "<< "\t";
-    cin.ignore();
-    getline(cin, job);
-
-
-    cout<<firstName<<", you're "<<age<<" years old"<<endl;
-
+    
+    
 
 }
