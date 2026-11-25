@@ -10,18 +10,20 @@ int power(int x, int n){
         return x*smallAnswer;
     }
 
-int sum( int x) {
+int sumOD( int x) {
     x = abs(x);
     if(x < 10){
         return x;
     }
-    int smallNbr = sum(x/10);
+    int smallNbr = sumOD(x/10);
     return x%10 + smallNbr;
 }
 
 int main() {
-    cout<< "2 power 5 is: "<<  power(2,5) << endl;
-    cout<< "the sum of digits of 598471 is: " << sum(598471) << endl;
-    cout<< "the sum of -12345 is: " << sum(-12345) << endl;
+    cout<< "2 power 5 is: "<<  pow(-5,3) << endl;
+    char n,a,b,c,d;
+    cin>>n;
+    // cout<< "the sum of digits of 598471 is: " << sumOD(598471) << endl;
+    cout<< "the sum of n is: " << sumOD(n) << endl;
     
 }
